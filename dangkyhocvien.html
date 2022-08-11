@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dang ky hoc vien</title>
+    <style>
+        .mau{
+            color: rgb(9, 9, 173);
+        }
+        form{
+            background-color: rgb(215, 146, 18);
+            width: 600px;
+        }
+        table{
+            width: 600px;
+            padding: 5px;
+        }
+        #title{
+            color: blue;
+            background-color: aqua;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td colspan="2" id="title">DANG KY HOC VIEN</td>
+            </tr>
+            <tr>
+                <td class="mau"><label for="name">HO VA TEN</label></td>
+                <td><input type="text" name="name" id="name" size="35"></td>
+            </tr>
+            <tr>
+                <td class="mau"><label for="dob">NGAY SINH</label></td>
+                <td><input type="text" name="dob" id="dob"></td>
+            </tr>
+            <tr>
+                <td class="mau">GIOI TINH</td>
+                <td>
+                    <input type="checkbox" name="gender">NAM
+                    <input type="checkbox" name="gender">NU
+                </td>
+            </tr>
+            <tr>
+                <td class="mau"><label for="adress">DIA CHI</label></td>
+                <td>
+                    <textarea name="adress" id="adress" cols="30" rows="10"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td class="mau"><label for="classes">LOP</label></td>              
+                <td>
+                    <select name="classes" id="classes">
+                        <option value="">CHON LOP</option>
+                        <option value="1">LOP 1</option>
+                        <option value="2">LOP 2</option>
+                        <option value="3">LOP 3</option>
+                        <option value="4">LOP 4</option>
+                        <option value="5">LOP 5</option>
+                    </select>
+
+                </td>
+            </tr>
+            <tr>
+                <td class="mau"><label for="email">EMAIL</label></td>
+                <td><input type="text" name="email" id="email" size="30"></td>
+            </tr>
+            <tr>
+                <td class="mau"><label for="phone">SO DIEN THOAI</label></td>
+                <td><input type="text" name="phone" id="phone" size="30"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <button type="submit">DANG KY</button>
+                    <button type="reset">NHAP LAI</button>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
