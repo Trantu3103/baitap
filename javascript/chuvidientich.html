@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chu Vi Dien Tich Hinh Tron</h1>
+    <p>Nhap ban kinh hinh tron</p>
+    <input type="text" id="input">
+    <h2 id="chu vi"></h2>
+    <h2 id="dien tich"></h2>
+    <button onclick="tinhToanhinhtron()">ket qua</button>
+</body>
+<script>
+    function tinhToanhinhtron() {
+        let r = document.getElementById("input").value
+        let chuvi = 2 * r * Math.PI
+        let dientich = Math.pow(r, 2) * Math.PI
+        document.getElementById("chu vi").innerHTML = "chu vi hinh tron la: " + chuvi
+        document.getElementById("dien tich").innerHTML = "dien tich hinh tron la: " + dientich
+    }
+</script>
+</html>
