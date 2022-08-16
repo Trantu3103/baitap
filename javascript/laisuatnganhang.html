@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>tinh toan tien gui ngan hang</tr>
+        <tr>
+            <th>Tien $</th>
+            <td><input type="text" id="tien"></td>
+        </tr>
+        <tr>
+            <th>lai suat</th>
+            <td><input type="text" id="lai"></td>
+        </tr>
+        <tr>
+            <th>year</th>
+            <td><input type="text" id="year"></td>
+        </tr>
+
+    </table>
+    <h2 id="ketqua"></h2>
+    <button onclick="tinhlaisuat()">Click de tinh lai suat</button>
+</body>
+<script>
+    function tinhlaisuat() {
+        let money = Number(document.getElementById("tien").value)
+        let rate = document.getElementById("lai").value
+        let year = document.getElementById("year").value
+        let result = money + year * (money * rate/100)
+        document.getElementById("ketqua").innerHTML = "so tien nhan duoc la: " + result + "$"
+    }
+</script>
+</html>
