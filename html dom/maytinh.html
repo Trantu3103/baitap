@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máy tinh nâng cấp</title>
+    <style>
+        table {
+            width: 300px;
+            border: 1px solid;
+            text-align: center;
+            background-color: rgb(172, 89, 89);
+        }
+        button {
+            width: 50px;
+            border: 0.5px solid;
+            border-radius: 3px;
+            background-color: rgb(135, 232, 232);
+        }
+        input {
+            width: 290px;
+            height: 30px;
+            background-color: bisque;
+        }
+        h1{
+            color: bisque;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <tr><td colspan="4">
+              <h1>Máy tính</h1>  
+        </td> 
+        </tr>
+        <tr>
+            <td colspan="4"><input type="text" id="display" value=""></td>
+        </tr>
+        <tr>
+            <td><button onclick="mo()">(</button></td>
+            <td><button onclick="dong()">)</button></td>
+            <td><button onclick="phantram()">%</button></td>
+            <td><button onclick="xoa()">C</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="num7()">7</button></td>
+            <td><button onclick="num8()">8</button></td>
+            <td><button onclick="num9()">9</button></td>
+            <td><button onclick="dauchia()">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="num4()">4</button></td>
+            <td><button onclick="num5()">5</button></td>
+            <td><button onclick="num6()">6</button></td>
+            <td><button onclick="daunhan()">x</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="num1()">1</button></td>
+            <td><button onclick="num2()">2</button></td>
+            <td><button onclick="num3()">3</button></td>
+            <td><button onclick="dautru()">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="num0()">0</button></td>
+            <td><button onclick="daucham()">.</button></td>
+            <td><button onclick="ketqua()">=</button></td>
+            <td><button onclick="daucong()">+</button></td>
+        </tr>
+    </table>
+</body>
+<script>
+    function num1() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "1"
+    }
+    function num2() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "2"
+    }
+    function num3() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "3"
+    }
+    function num4() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "4"
+    }
+    function num5() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "5"
+    }
+    function num6() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "6"
+    }
+    function num7() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "7"
+    }
+    function num8() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "8"
+    }
+    function num9() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "9"
+    }
+    function num0() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "0"
+    }
+    function daucong() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "+"
+    }
+    function dautru() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "-"
+    }
+    function daunhan() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "*"
+    }
+    function dauchia() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "/"
+    }
+    function daucham() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "."
+    }
+    function mo() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + "("
+    }
+    function dong() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = display + ")"
+    }
+    function phantram() {
+        let display = document.getElementById("display").value
+        let result =(display) / 100
+        document.getElementById("display").value = result
+    }
+    function xoa() {
+        let display = document.getElementById("display").value
+        document.getElementById("display").value = ""
+    }
+    function ketqua() {
+        let display = document.getElementById("display").value
+        let result = eval(display)
+        document.getElementById("display").value = result
+    }
+</script>
+</html>
