@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tính điểm đại học khối D</h1>
+    <label>Điểm Toán <input type="text" id="toan"></label><br>
+    <label>Điểm Văn <input type="text" id="van"></label><br>
+    <label>Điểm Anh <input type="text" id="anh"></label><br>
+    <label>điểm kv<select id="khuvuc">
+        <option value="0.75">KV 1</option>
+        <option value="0.5">KV 2</option>
+        <option value="0.25">KV 2-NT</option>
+        <option value="0">KV 3</option></select></label><br>
+    <button onclick="tongdiem()">Tính điểm</button><br>
+    <h2 id="ketqua" style="color:red ;"></h2>
+</body>
+<script>
+function tongdiem() {
+    let toan = +document.getElementById("toan").value
+    let van = +document.getElementById("van").value
+    let anh = +document.getElementById("anh").value
+    let khuvuc = +document.getElementById("khuvuc").value
+    let tongdiem = toan + van + anh + khuvuc
+    document.getElementById("ketqua").innerHTML = "Tổng điểm khối D của bạn là" + tongdiem
+    
+}
+</script>
+</html>
