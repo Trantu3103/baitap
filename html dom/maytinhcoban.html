@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Máy tính cơ bản</h1>
+    <input type="text" id="so1">
+    <input type="text" id="so2">
+    <br>
+    <br>
+    <button onclick="phepcong()">Cộng (+)</button>
+    <button onclick="pheptru()">Trừ (-)</button>
+    <button onclick="phepnhan()">Nhân (x)</button>
+    <button onclick="phepchia()">Chia (/)</button>
+    <br>
+    <h3 id="result"></h3>
+</body>
+<script>
+    function phepcong() {
+        let number1 = Number(document.getElementById("so1").value)
+        let number2 = Number(document.getElementById("so2").value)
+        let result = number1 + number2
+        document.getElementById("result").innerHTML = "Kết quả phép cộng: " + result
+    }
+    function pheptru() {
+        let number1 = Number(document.getElementById("so1").value)
+        let number2 = Number(document.getElementById("so2").value)
+        let result = number1 - number2
+        document.getElementById("result").innerHTML = "Kết quả phép trừ: " + result
+    }
+    function phepnhan() {
+        let number1 = Number(document.getElementById("so1").value)
+        let number2 = Number(document.getElementById("so2").value)
+        let result = number1 * number2
+        document.getElementById("result").innerHTML = "Két quả phép nhân: " + result
+    }
+    function phepchia() {
+        let number1 = Number(document.getElementById("so1").value)
+        let number2 = Number(document.getElementById("so2").value)
+        let result = number1 / number2
+        document.getElementById("result").innerHTML = "Kết quả phép chia: " + result
+    }
+</script>
+</html>
