@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Giá hoa quả</h1>
+    <input type="text" id="tenhoaqua">
+    <button onclick="xemgia()">Tra giá</button>
+    <h2 id="ketqua"></h2>
+</body>
+<script>
+    function xemgia() {
+        let tenhoaqua = document.getElementById("tenhoaqua").value
+        switch(tenhoaqua) {
+            case "Ổi":
+            case "Dưa hấu":    
+                document.getElementById("ketqua").innerHTML = "20000 VND/Kg"
+                break
+            case "Táo":
+            case "Xoài":    
+                document.getElementById("ketqua").innerHTML = "30000 VND/Kg"
+                break
+            case "Cam":
+            case "Chôm chôm":    
+                document.getElementById("ketqua").innerHTML = "40000 VND/Kg"
+                break
+            case "Măng cụt":
+                document.getElementById("ketqua").innerHTML = "50000 VND/Kg"
+                break
+        }
+
+    }
+</script>
+</html>
