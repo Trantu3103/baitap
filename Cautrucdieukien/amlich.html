@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Tính năm âm lịch</h1>
+    <input type="text" id="year"><button onclick="amlich()">Tính năm</button>
+    <h2 id="result"></h2>
+</body>
+<script>
+    function amlich() {
+        let year = +document.getElementById("year").value
+        let can = year % 10
+        let chi = year % 12
+        let amlich = ""
+        switch (can) {
+            case 0:
+                amlich += "canh "
+                break
+            case 1:
+                amlich += "Tân "
+                break
+            case 2:
+                amlich += "Nhâm "
+                break
+            case 3:
+                amlich += "Quý "
+                break
+            case 4:
+                amlich += "Giáp "
+                break
+            case 5:
+                amlich += "Ất "
+                break
+            case 6:
+                amlich += "Bính "
+                break
+            case 7:
+                amlich += "Đinh "
+                break
+            case 8:
+                amlich += "Mậu "
+                break
+            case 9:
+                amlich += "Kỷ "
+                break
+        }
+        switch (chi) {
+            case 0:
+                amlich += "Thân "
+                break
+            case 1:
+                amlich += "Dậu "
+                break
+            case 2:
+                amlich += "Tuất "
+                break
+            case 3:
+                amlich += "Hợi "
+                break
+            case 4:
+                amlich += "Tý "
+                break
+            case 5:
+                amlich += "Sửu "
+                break
+            case 6:
+                amlich += "Dần "
+                break
+            case 7:
+                amlich += "Mão "
+                break
+            case 8:
+                amlich += "Thìn "
+                break
+            case 9:
+                amlich += "Tỵ "
+                break
+            case 10:
+                amlich += "Ngọ "
+                break
+            case 11:
+                amlich += "Mùi "
+                break
+        }
+        document.getElementById("result").innerHTML = "Năm âm lịch của " + year + " là: " + amlich
+    }
+</script>
+</html>
